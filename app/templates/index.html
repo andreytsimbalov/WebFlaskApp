@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Welcome to WebApp!</title>
+    </head>
+    <body>
+        <h1>Оглавление</h1>
+        {% for sitemap_value in sitemap %}
+<!--        <div><p><a href={{url+"/"+sitemap_value.route}} target="_blank">{{sitemap_value.name}}</a></p></div>-->
+        <div><p><a href={{url+"/"+sitemap_value.route}}>{{ sitemap_value.name }}</a></p></div>
+        {% endfor %}
+    </body>
+</html>

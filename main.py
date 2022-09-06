@@ -1,5 +1,5 @@
 from app import app
-from app.settings import *
+from settings import *
 
 app.run(
     debug=True,
